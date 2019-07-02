@@ -7,5 +7,9 @@ language: julia
 julia:
   - 1.1
 
+before_install:
+  - curl https://sh.rustup.rs -sSf | sh -s -- -y
+  - source $HOME/.cargo/env
+
 script:
   - julia --color=yes --project=. -e 'using Pkg; pkg"instantiate"; pkg"build"; pkg"precompile"; Pkg.test()'
