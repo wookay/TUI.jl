@@ -1,0 +1,10 @@
+deps/.rustc_info.json
+deps/deps.jl
+deps/*.dylib
+
+.DS_Store
+
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+access.log
