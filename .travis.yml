@@ -8,4 +8,4 @@ julia:
   - 1.1
 
 script:
-  - julia --color=yes --project=. -e 'using Pkg; pkg"instantiate"; pkg"precompile"; Pkg.test()'
+  - julia --color=yes --project=. -e 'using Pkg; pkg"instantiate"; pkg"build"; pkg"precompile"; Pkg.test()'

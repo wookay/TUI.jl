@@ -1,5 +1,8 @@
+Manifest.toml
+
 deps/.rustc_info.json
 deps/deps.jl
+deps/build.log
 deps/*.dylib
 
 .DS_Store
