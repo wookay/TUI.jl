@@ -5,6 +5,6 @@ using TUI
 
 TUI.rustdylib_printhello()
 
-@test true
+@test TUI.rustdylib_uppercase("apple") == "APPLE"
 
 end # module test_tui_hello
