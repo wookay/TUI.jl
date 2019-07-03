@@ -1,5 +1,7 @@
 // cargo run --example main
 
+// code from https://github.com/fdehau/tui-rs/blob/master/tests/paragraph.rs
+
 extern crate tui;
 use tui::backend::TestBackend;
 #[allow(unused_imports)] use tui::buffer::Buffer;
@@ -8,11 +10,11 @@ use tui::widgets::{Block, Borders, Paragraph, Text, Widget};
 use tui::Terminal;
 
 #[allow(dead_code)]
-fn println<T: std::fmt::Debug>(x: T) {
+fn println<T>(x: T) where T: std::fmt::Debug {
     println!("{:?}", x);
 }
 
-fn print<T: std::fmt::Debug>(x: T) {
+fn print<T>(x: T) where T: std::fmt::Debug {
     print!("{:?}", x);
 }
 

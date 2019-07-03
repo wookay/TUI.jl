@@ -1,5 +1,7 @@
 // cargo test --test paragraphs
 
+// code from https://github.com/fdehau/tui-rs/blob/master/tests/paragraph.rs
+
 extern crate tui;
 use tui::backend::TestBackend;
 use tui::buffer::Buffer;
