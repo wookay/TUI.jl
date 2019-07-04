@@ -23,6 +23,6 @@ fn test_uppercase() {
     let word = "apple";
     let cstring = CString::new(word).unwrap();
     let rawptr = rustdylib_uppercase(cstring.as_ptr());
-    let s = CString::from_raw(rawptr);
+    let s = unsafe { CStr::from_ptr(rawptr) }.to_str().unwrap();
     assert_eq!("APPLE", s);
 }
